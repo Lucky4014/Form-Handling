@@ -1,0 +1,64 @@
+/* src/App.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Segoe UI', sans-serif; background: #f0f4f8; min-height: 100vh; }
+
+.app { display: flex; justify-content: center; padding: 40px 16px; }
+
+.form-container {
+  background: white;
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 520px;
+}
+
+.form-container h2 { margin-bottom: 24px; color: #1a202c; font-size: 1.5rem; }
+
+.field { margin-bottom: 18px; display: flex; flex-direction: column; gap: 6px; }
+
+label { font-size: 0.9rem; font-weight: 600; color: #4a5568; }
+
+input, select {
+  padding: 10px 14px;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border 0.2s;
+}
+
+input:focus, select:focus { outline: none; border-color: #667eea; }
+
+.error { color: #e53e3e; font-size: 0.82rem; }
+
+.checkbox-field { flex-direction: row; align-items: flex-start; flex-wrap: wrap; }
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover { background: #5a67d8; }
+
+.success-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.success-box h2 { color: #38a169; margin-bottom: 12px; }
+.success-box button { margin-top: 20px; padding: 10px 24px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; }
